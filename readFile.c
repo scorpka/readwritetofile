@@ -1,14 +1,16 @@
 #include<stdio.h>
 int main(void) {
 FILE *fp;
- char a[50] = " ";
- char b[50] = " ";
+ char a[20] = " ";
+ char b[20] = " ";
 
 
   fp = fopen("readFile.txt","r");
- // for (int y = 0; y < 20; y++) {
   fscanf(fp,"%s%s",&a,&b); 
   fclose(fp);
-//};
+ 
+  fp = fopen("readFile.txt","w");
+   fprintf(fp,"%s %s",&b,&a);
+  fclose(fp); 
    printf("%s%s",a,b); 
 }
