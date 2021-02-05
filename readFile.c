@@ -9,6 +9,8 @@ FILE *fp;
   for (int j=0; j<20; j++){
     fscanf(fp,"%c%c",&a,&b);
    if (a == EOF || b == EOF) {break;};
+   if  (a == ' ') { a= '\t';};
+   if  (b == ' ') { b= '\t';};
    cac[n]= a; n++; cac[n] = b; n++;
    
   }

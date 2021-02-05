@@ -1,5 +1,5 @@
-fr1end hell0
-zdorova drug
-aloha amigo
+fr1end	hell0
+zdorova	drug
+aloha	amigo
 
 
