@@ -1,6 +1,6 @@
 #include<stdio.h>
-  int readFile(char a,char b,FILE *fp,char *cac) {
-   int n = 0;
+  int readFile(FILE *fp,char *cac) {
+   int n = 0; char a; char b;
    //extern char cac[90];
    fp = fopen("readFile.txt","r");
 
@@ -23,12 +23,8 @@ int writeFile(FILE *fp, char *cac) {
 
 int main(void) {
  FILE *fp;
- char a;
- char b;
  char cac[90] = " ";
-
-
- readFile(a,b,fp,cac); 
+ readFile(fp,cac); 
  writeFile(fp,cac);
 
  printf("%s",cac); 
